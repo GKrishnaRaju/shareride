@@ -10,5 +10,4 @@ public class SharerideApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(SharerideApplication.class, args);
 	}
-
 }
