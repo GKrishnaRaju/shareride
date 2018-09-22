@@ -1,4 +1,4 @@
-package com.shareride.shareride;
+/*package com.shareride.shareride;
 
 
 import java.time.LocalDate;
@@ -50,3 +50,4 @@ public class Offerride_Controller_Test {
     }
 	//@DateTimeFormat(pattern = "dd.MM.yyyy", iso = DateTimeFormat.ISO.DATE)	 LocalDateTime dateAndTime
 }
+*/
