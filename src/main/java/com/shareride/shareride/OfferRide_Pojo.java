@@ -134,6 +134,15 @@ public class OfferRide_Pojo {
 	}
 
 
+	@Override
+	public String toString() {
+		return "OfferRide_Pojo [offerId=" + offerId + ", source=" + source + ", destination=" + destination
+				+ ", localDate=" + localDate + ", localTime=" + localTime + ", stopOver=" + stopOver + ", noOfSeats="
+				+ noOfSeats + ", max2seat=" + max2seat + ", rideDetails=" + rideDetails + ", termAndcon=" + termAndcon
+				+ "]";
+	}
+
+
 	
 
 }
