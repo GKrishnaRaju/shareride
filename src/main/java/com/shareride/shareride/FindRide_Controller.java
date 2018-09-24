@@ -22,13 +22,10 @@ public class FindRide_Controller {
 			@RequestParam("destination") String destination)
 	{
 		System.out.println(source+"  "+destination);
-		List<OfferRide_Pojo> findBySourceDest = repo.findBySourceDest();
-		StringBuffer sb = new StringBuffer();
-		for (OfferRide_Pojo offerRide_Pojo : findBySourceDest) {
-			sb.append(offerRide_Pojo.toString()+"\n");
-		}
+		  OfferRide_Pojo findBySourceDest =repo.findBySourceDest(source, destination);
 		
-		return "hello"+sb.toString();
+		
+		return "hello"+findBySourceDest;
 
 	}
 //	{
