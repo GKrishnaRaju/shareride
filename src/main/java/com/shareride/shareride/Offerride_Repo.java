@@ -15,7 +15,7 @@ public interface Offerride_Repo extends JpaRepository<OfferRide_Pojo, Long> {
 
 
 	@Query("select u from OfferRide_Pojo u where u.source = :source and u.destination = :destination")
-	OfferRide_Pojo findBySourceDest(@Param("source") String source,
+	List<OfferRide_Pojo> findBySourceDest(@Param("source") String source,
             @Param("destination") String destination);
 	}
 

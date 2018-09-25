@@ -1,11 +1,8 @@
 package com.shareride.shareride;
 
-import java.util.Iterator;
-import java.util.List;import java.util.stream.Collector;
-import java.util.stream.Collectors;
+import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -22,9 +19,7 @@ public class FindRide_Controller {
 			@RequestParam("destination") String destination)
 	{
 		System.out.println(source+"  "+destination);
-		  OfferRide_Pojo findBySourceDest =repo.findBySourceDest(source, destination);
-		
-		
+		  List<OfferRide_Pojo> findBySourceDest =repo.findBySourceDest(source, destination);
 		return "hello"+findBySourceDest;
 
 	}
