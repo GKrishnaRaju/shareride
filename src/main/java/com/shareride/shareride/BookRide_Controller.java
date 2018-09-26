@@ -25,7 +25,7 @@ public class BookRide_Controller {
 	public String formInput(@MatrixVariable String id) {
 		
 		System.out.println("----------Book ride called ---------");
-		System.out.println(id + "  ");
+		System.out.println("GOT id "+id + "  ");
 		
 		
 		// List<OfferRide_Pojo> findBySourceDest = repo.findBySourceDest();
@@ -34,6 +34,6 @@ public class BookRide_Controller {
 		// sb.append(offerRide_Pojo.toString()+"\n");
 		// }
 
-		return "hello" + id + "";// +seats;
+		return "Booked for " + id + "";// +seats;
 	}
 }

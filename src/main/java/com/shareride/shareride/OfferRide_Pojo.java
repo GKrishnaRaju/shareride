@@ -69,6 +69,10 @@ public class OfferRide_Pojo {
 		return localTime;
 	}
 
+	public Long getOfferId() {
+		return offerId;
+	}
+
 	public void setLocalTime(LocalTime localTime) {
 		this.localTime = localTime;
 	}
