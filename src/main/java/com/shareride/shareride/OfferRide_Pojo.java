@@ -22,6 +22,7 @@ public class OfferRide_Pojo {
 	private long max2seat;
 	private String rideDetails;
 	private String termAndcon;
+	private boolean seatsFilled;
 
 	public OfferRide_Pojo() {
 		// TODO Auto-generated constructor stub
@@ -117,11 +118,21 @@ public class OfferRide_Pojo {
 		this.termAndcon = termAndcon;
 	}
 
+
+	public boolean isSeatsFilled() {
+		return seatsFilled;
+	}
+
+	public void setSeatsFilled(boolean seatsFilled) {
+		this.seatsFilled = seatsFilled;
+	}
+
 	@Override
 	public String toString() {
 		return "OfferRide_Pojo [offerId=" + offerId + ", source=" + source + ", destination=" + destination
 				+ ", localDate=" + localDate + ", localTime=" + localTime + ", stopOver=" + stopOver + ", noOfSeats="
 				+ noOfSeats + ", max2seat=" + max2seat + ", rideDetails=" + rideDetails + ", termAndcon=" + termAndcon
-				+ "]";
+				+ ", seatsFilled=" + seatsFilled + "]";
 	}
+	
 }
